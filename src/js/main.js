@@ -1,4 +1,6 @@
 import "../scss/style.scss";
+import {startAnimation} from './PENGUIN-Animation/animation';
+startAnimation();
 const openMenu = document.querySelector(".main-header__button");
 const menu = document.querySelector(".main-header__list");
 const closeMenu = document.querySelector(".main-header__cross");
