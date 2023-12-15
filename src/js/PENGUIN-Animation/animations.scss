@@ -157,73 +157,71 @@
     }
   }
 }
-
-@include moveAnimation(".main-header .main-header__item", 1s, 20vh, "top");
 @include moveAnimation(
   ".first-screen .first-screen__title",
   0.7s,
   20vw,
-  "left",
+  "left"
 );
 @include moveAnimation(
   ".first-screen .first-screen__text",
   0.7s,
   20vw,
-  "right",
+  "right"
 );
 @include moveAnimation(
   ".benefit:first-of-type .benefit-container",
   0.7s,
   20vw,
-  "left",
+  "left"
 );
 @include moveAnimation(
   ".benefit:first-of-type .benefit__image",
   0.5s,
   50vw,
-  "right",
+  "right"
 );
 @include moveAnimation(
   ".benefit:nth-of-type(2) .benefit-container",
   0.7s,
   20vw,
-  "right",
+  "right"
 );
 @include moveAnimation(
   ".benefit:nth-of-type(2) .benefit__image",
   0.5s,
   50vw,
-  "left",
+  "left"
 );
 @include moveAnimation(
   ".communication-container .text-container",
   0.5s,
   20vw,
-  "left",
-  );
+  "left"
+);
 @include moveAnimation(
   ".communication-container .communication__btn",
   0.5s,
   20vw,
-  "right",
+  "right"
+);
+@media (min-width: 1000px) {
+  @include moveAnimation(
+    ".main-footer .main-footer__title",
+    0.5s,
+    20vw,
+    "left"
   );
-  @media (min-width:1000px) {
-    @include moveAnimation(
-      ".main-footer .main-footer__title",
-      0.5s,
-      20vw,
-      "left",
-    );
-    @include moveAnimation(
-      ".main-footer .main-footer__list",
-      0.5s,
-      20vw,
-      "bottom",
-    );
-    @include moveAnimation(
-      ".main-footer .main-footer__content",
-      0.5s,
-      20vw,
-      "right",
-    )
+  @include moveAnimation(
+    ".main-footer .main-footer__list",
+    0.5s,
+    20vw,
+    "bottom"
+  );
+  @include moveAnimation(
+    ".main-footer .main-footer__content",
+    0.5s,
+    20vw,
+    "right"
+  );
 }

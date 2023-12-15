@@ -45,7 +45,6 @@ const addBaseAnimationClass = (...classes) => {
 
 export const startAnimation = () => {
   addBaseAnimationClass(
-    ".main-header",
     ".first-screen",
     ".benefit",
     ".communication-container",
