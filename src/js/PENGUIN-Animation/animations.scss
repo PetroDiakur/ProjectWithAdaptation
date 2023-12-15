@@ -207,21 +207,23 @@
   20vw,
   "right",
   );
-@include moveAnimation(
-  ".main-footer .main-footer__title",
-  0.5s,
-  20vw,
-  "left",
-);
-@include moveAnimation(
-  ".main-footer .main-footer__list",
-  0.5s,
-  20vw,
-  "bottom",
-);
-@include moveAnimation(
-  ".main-footer .main-footer__content",
-  0.5s,
-  20vw,
-  "right",
-)
+  @media (min-width:1000px) {
+    @include moveAnimation(
+      ".main-footer .main-footer__title",
+      0.5s,
+      20vw,
+      "left",
+    );
+    @include moveAnimation(
+      ".main-footer .main-footer__list",
+      0.5s,
+      20vw,
+      "bottom",
+    );
+    @include moveAnimation(
+      ".main-footer .main-footer__content",
+      0.5s,
+      20vw,
+      "right",
+    )
+}
