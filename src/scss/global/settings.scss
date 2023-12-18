@@ -24,11 +24,14 @@ button {
   }
   
 .body-container {
-    max-width: 500px;
     margin: 0 auto;
-    @media (min-width:$tablet-size) {
+    overflow: hidden;
+    @media (min-width:500px) {
+    max-width:500px;
+     @media (min-width:$tablet-size) {
         max-width: 1000px;
-    }  
+        }  
+    }
     @media (min-width:$desktop-size) {
         max-width: none;
     }
